@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 /*Paleta de colores
 
 Columbia blue: #a7c9da
@@ -8,3 +10,76 @@ Aero: #56bee7
 Prussian Blue: #0a334b
 Golden Brown: #937540
 */
+
+:root { /*variables*/
+    --color0:#a7c9da;
+    --color1:#037bad;
+    --color2:#56bee7;
+    --color3:#0a334b;
+    --color4:#937540;
+    --font1:'Josefin Sans', sans-serif;
+}
+
+* {
+    font-family: var(--font1);
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: var(--color1);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden; /*Para que la imagen quede dentro del borde redondeado. En otras palabras, todo lo que quede fuera del borde será escondido (hidden)*/
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450); /*sobra sin desplazamiento*/
+}
+
+section#login > div#imagen {
+    display: block;
+    background: var(--color1) url(../imagens/pexels-ngai-man-yan-842158.jpg) no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: right bottom;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+main h1 {
+    font-size: 2em;
+    padding: 5px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 1.1em;
+    padding: 5px;
+    text-align: center;
+}
+
+main p {
+    font-size: 0.8em;
+    padding: 5px;
+    text-align: center;
+}
