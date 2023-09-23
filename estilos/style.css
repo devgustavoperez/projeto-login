@@ -145,10 +145,10 @@ form > input[type=submit]:hover {
 form > a.boton { /*el link (a - anchor) de la clase boton dentro del formulario*/
     display: block;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 1em;
     width: 100%;
     height: 40px;
-    padding-top: 5px;
+    padding-top: 12px;
     margin-top: 5px;
     background-color: var(--color1);
     color: white;
@@ -159,10 +159,5 @@ form > a.boton { /*el link (a - anchor) de la clase boton dentro del formulario*
 form > a.boton:hover {
     background-color: var(--color2);
     color: black;
-}
-
-form > a.boton > span {
-    padding-top: 3px;
-    font-size: 1.2em;
 }
 
