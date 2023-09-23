@@ -86,3 +86,58 @@ div#formulario > p {
     padding: 5px;
     text-align: center;
 }
+
+form > div.campo {
+    background-color: var(--color4);
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+div.campo > label {
+    display: none; /*borrar los labels de los campos del formulario*/
+}
+
+form > input[type=submit] { /*entre corchetes especificamos el input al que hacemos referencia, ya que en el formulario tenemos tres diferentes*/
+    display: block;
+    font-size: 1em;
+    width: 100%; /*con respecto a la caja contenedora*/
+    height: 40px;
+    background-color: var(--color3);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: var(--color2);
+    color: black;
+}
+
+form > a.boton { /*el link (a - anchor) de la clase boton dentro del formulario*/
+    display: block;
+    text-align: center;
+    font-size: 0.9em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: var(--color1);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none; /*sin subrayado*/
+}
+
+form > a.boton:hover {
+    background-color: var(--color2);
+    color: black;
+}
+
+form > a.boton > span {
+    padding-top: 3px;
+    font-size: 1.2em;
+}
+
