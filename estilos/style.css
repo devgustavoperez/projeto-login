@@ -50,7 +50,10 @@ section#login {
     width: 250px;
     height: 500px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450); /*sobra sin desplazamiento*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450); /*sombra sin desplazamiento*/
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagen {
