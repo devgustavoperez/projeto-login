@@ -69,20 +69,20 @@ section#login > div#formulario {
     padding: 10px;
 }
 
-main h1 {
+div#formulario > h1 {
     font-size: 2em;
     padding: 5px;
     text-align: center;
 }
 
-main h2 {
+div#formulario > h2 {
     font-size: 1.1em;
     padding: 5px;
     text-align: center;
 }
 
-main p {
-    font-size: 0.8em;
+div#formulario > p {
+    font-size: 0.9em;
     padding: 5px;
     text-align: center;
 }
